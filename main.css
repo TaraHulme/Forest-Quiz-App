@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: darkgreen;
+    margin:0;
+    background-color: aquamarine;}
+    /*replace background color and add image of forest background-image: url()
+    use background:cover;*/
+
+header {
+    margin-top: 25px;
+    height: 70px;
+    color: blue;
+    margin-bottom: 55px;
+}
+
+.row {
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+header h1 {
+    line-height: 1;
+    top:24px;
+    text-align: center;
+  }
+
+fieldset {
+    width:80%;
+    padding: 40px;
+    margin:0 auto;
+    background: lightslategray;
+    text-align: center;
+  }
