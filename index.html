@@ -8,10 +8,11 @@
     <title>Eastern Deciduous Forest Quiz App</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
+<!-- Start Screen -->
 <body>
     <header>
         <div class="row">
-            <div class="col-1">
+            <div class="col-12">
                 <h1>Eastern Deciduous Forest Quiz</h1>
                 <div class="question-and-score"></div>
             </div>
@@ -21,19 +22,110 @@
     <main role="main">
         <fieldset>
             <div class="row">
-                <div class="col-1">
+                <div class="col-12">
                 <legend>A Walk Through the Forest Quiz</legend>
                 <p>A quiz about Eastern Deciduous Forests. How much do you know?</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-1">
+                <div class="col-12">
                     <button type="button" id="start"> START QUIZ</button>
                 </div>
             </div>
         </fieldset>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Question Screen -->
+      <header>
+          <div class="row">
+              <div class="col-12">
+                  <h1>Eastern Deciduous Forest Quiz</h1>
+                  <div class="question-and-score">
+                      <ul>
+                        <li id="js-answered">Question Number: 1/5</li>
+                        <li id="js-score">Score: 0/5</li>
+                     </ul>
+                  </div>
+              </div>
+          </div>
+      </header>
+         <form id="js-questions" class="question-form">
+          <fieldset>
+              <div class="row">
+                  <div class="col-12">
+                  <legend>Title of Question</legend>
+                  <p>1st Question</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <button type="submit" id="answer" tabindex="5">Submit</button>
+                      <!-- <button type = "button" id="next-question" tabindex="6"> Next</button> -->
+                  </div>
+              </div>
+          </fieldset>
+        </form>
     
+    <!-- Question Right or Wrong  -->
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <h1>Eastern Deciduous Forest Quiz</h1>
+                <div class="question-and-score">
+                    <ul>
+                      <li id="js-answered">Question Number: 1/5</li>
+                      <li id="js-score">Score: 1/5</li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+       <form id="js-questions" class="question-form">
+        <fieldset>
+            <div class="row">
+                <div class="col-12">
+                <legend>Title of Question</legend>
+                <p>1st Question</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span id="js-r">you got it right!</span> 
+                    <!-- <button type="submit" id="answer" tabindex="5">Submit</button> -->
+                    <button type = "button" id="next-question" tabindex="6"> Next</button>
+                </div>
+            </div>
+        </fieldset>
+      </form>
+    
+        <!-- End/Restart Screen -->
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <h1>Eastern Deciduous Forest Quiz</h1>
+                <div class="question-and-score"></div>
+            </div>
+        </div>
+    </header>
+      <div class="results">
+      <form id="js-restart-quiz">
+        <fieldset>
+            <div class="row">
+                <div class="col-12">
+                <legend>Your Score is:  3/5</legend>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="restart"> Restart Quiz</button>
+                </div>
+            </div>
+        </fieldset>
+      </form>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="store.js"></script>
 </body>
 </html>
