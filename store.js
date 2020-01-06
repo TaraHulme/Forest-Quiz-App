@@ -49,9 +49,9 @@ const STORE = {
         //5
             question: "What are other threats facing the forest?",
             options: [
-                "Red Maple", 
-                "Birch", 
-                "Ash", 
+                "Deforestation", 
+                "Habitat loss due to development", 
+                "Climate Change", 
                 "All of the Above"
             ],
             answer: "All of the Above"

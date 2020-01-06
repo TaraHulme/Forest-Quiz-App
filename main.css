@@ -1,20 +1,17 @@
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "Roboto", sans-serif;
-    color: darkgreen;
+    color: rgb(1, 27, 1);
     margin:0;
     background:cover;
-    background-image: url ("https://images.pond5.com/pan-eastern-deciduous-forest-spring-footage-080809673_iconl.jpeg");
-    /* background-image: url ("https://www.nps.gov/im/ncrn/images/I-M_20061027_AutumnColors_51_lg.jpg"); */
-    /*background-color: darkslategrey;*/
+    background-image: url("https://www.nps.gov/im/ncrn/images/I-M_20061027_AutumnColors_51_lg.jpg");
+    background-color: #2f4f4f;
 }
 header {
     margin-top: 25px;
     height: 70px;
-    color: blue;
+    color: white;
     margin-bottom: 55px;
 }
 
@@ -29,17 +26,96 @@ header h1 {
     line-height: 1;
     top:24px;
     text-align: center;
+    background: rgba(182, 196, 182, 0.702);
+    border-radius: 40%;
   }
 
-fieldset {
-    width:80%;
-    padding: 40px;
-    margin:0 auto;
-    background: lightslategray;
-    text-align: center;
-  }
+header .question-and-score {
+    font-size: 25px;
+    font-weight: 600px;
+    color: white;
+    background: none;
+}
 
- .question-and-score ul {
+.question-and-score ul {
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
     list-style-type: none;
 }
+
+.question-and-score li {
+    display: inline-block;
+    padding: 0 2%;
+}
+
+button {
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    background: rgb(172, 112, 84);
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+fieldset {
+    width:60%;
+    padding: 15px;
+    margin:0 auto;
+    background: rgb(112, 142, 172, 0.9);
+    border-radius: 15px;
+  }
+
+legend {
+      font-weight: 700;
+      font-size: 20px;
+  }
+
+.question-form .question {
+      margin-bottom: 20px;
+      padding: 0 2%;
+      font-size: 10px;
+      font-weight: 600px;
+  }
+
+.options ul {
+      margin: 0;
+      text-align: left;
+  }
+
+label {
+      font-size: 18px;
+  }
+
+.options span {
+      display: block;
+      border-radius: 10px;
+  }
+
+.right-answer {
+    background: lightyellow;
+    padding: 10px 20px;
+    margin: 5px 20px;
+    border:2px solid green;
+  }
+
+.wrong-answer {
+    background: lightyellow;
+    padding: 10px 20px;
+    margin: 5px 20px;
+    border:2px solid orange;
+  }
+
+button:hover {
+    background-color: rgb(110, 71, 52)
+  }
+  
+button:active {
+    background-color: rgb(110, 71, 52);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

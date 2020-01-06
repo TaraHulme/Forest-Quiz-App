@@ -29,7 +29,7 @@ function updateOptions() {
     let question = STORE.questions[STORE.currentQuestion];
     for (let i=0; i<question.options.length; i++) {
         $('main .js-options').append(`
-        <input type= "radio" name= "options id= "option${i+1} value = "${question.options[i]}" tabindex="${i+1}" required>
+        <input type= "radio" name= "options" id= "option${i+1}" value = "${question.options[i]}" tabindex="${i+1}" required>
         <label for= "option${i+1}"> ${question.options[i]}</label> 
         <br/>
         <span id="js-r${i+1}"></span>
@@ -105,7 +105,7 @@ function handleQuestions() {
 }
 //check whether the picked option is right or wrong and displays the respective message
 function handleSelectOption() {
-    $('body').on("submit", '#js-questions', function(event) {
+    $('body').on("submit", function(event) {
         event.preventDefault();
         let currentQues = STORE.questions[STORE.currentQuestion];
         let selectedOption = $("input[name=options]:checked").val();
