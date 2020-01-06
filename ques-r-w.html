@@ -1,0 +1,42 @@
+<!-- Question Right or Wrong  -->
+<header>
+        <div class="row">
+            <div class="col-12">
+                <h1>Eastern Deciduous Forest Quiz</h1>
+                <div class="question-and-score">
+                    <ul>
+                      <li id="js-answered">Question Number: 1/5</li>
+                      <li id="js-score">Score: 1/5</li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+       <form id="js-questions" class="question-form">
+        <fieldset>
+            <div class="row">
+                <div class="col-12">
+                <legend>What is the most common mammal found in this habitat?</legend>
+                    <input type = "radio" name="options" id="option-1" value= "question.options-1" tabindex ="" required> 
+                    <label for="option"> Red Fox</label> 
+                    <br>
+                    <input type = "radio" name="options" id="option-2" value= "question.options-2">
+                    <label for="option"> Opossum</label> 
+                    <br>
+                    <input type = "radio" name="options" id="option-3" value= "question.options-3" checked>
+                    <label for="option"> White-Tailed Deer</label> 
+                    <br>
+                    <input type = "radio" name="options" id="option-4" value= "question.options-4">
+                    <label for="option"> Racoon</label>
+                    <span id="js-r"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <span id="js-r">you got it right!</span> 
+                    <!-- <button type="submit" id="answer" tabindex="5">Submit</button> -->
+                    <button type = "button" id="next-question" tabindex="6"> Next</button>
+                </div>
+            </div>
+        </fieldset>
+      </form>
